@@ -25,6 +25,50 @@
   .card-text{
     font-size: 22px;
   }
+  #table-head-tag{
+    text-align: left;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 30px;
+    color: darkslategrey;
+  }
+  .hidden-info-content{
+  width: 400px;
+        padding: 10px;
+        border: 1px riyandharne@gmail.com
+lives in Pune Maharashtra riyandharne@gmail.com
+lives in Pune Maharashtra 
+  }
+  .hidden-info{
+    display: none;
+padding-inline-start: 10px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    text-align: justify;
+  }
+  #hidden-info-content-style{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font: outline;
+    font-weight: bold;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+  }
+  #go-back-from-table{
+   text-align: left;
+  
+  }
+  #table-button{
+    margin-left: 20px;
+    margin-bottom:5px;
+    margin-top: 5px;
+  }
+  #hidden-projects{
+    display: none;
+  }
   </style>
     </head>
     
@@ -35,42 +79,70 @@
                   <li class="nav-item">
                     <a class="nav-link" href="https://github.com/riyandharne-123">My Github</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Resume.html">My Resume</a>
-                  </li>
+                 
                 </ul>
               </nav>
-  
+ 
         <div class="jumbotron jumbotron-fluid">
+       
+           <!--HIDDEN more information-->
+  <div class="hidden-info">
+    <button class="btn btn-secondary" id="go-back-to-card">Go Back</button>
+      <div id="hidden-info-content-style" class="hidden-info-content">
+     riyandharne@gmail.com
+     <br>
+     lives in Pune Maharashtra
+     <br>
+     Loves to Code!
+      </div>
+    </div>
                
             <!--profile picture-->
                <!--<img src="profile.jpeg" style="height: 150px; width: 200px; margin-left: 50px; margin-bottom:20px;" class="rounded-circle" alt="profile"> -->
                <!--Card info-->
-               <div class="card" style="width:400px; margin-left: 20px;">
+               <div class="card" style="width:500px; margin-left: 20px;">
     <img class="card-img-top" src="profile.jpeg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">Riyan Dharne</h4>
       <p class="card-text">Front end web developer</p>
-      <button class="btn btn-primary" id="show-profile">See Profile</button>
-    
+      <button class="btn btn-primary" id="show-profile">See Skills</button>
+      <button class="btn btn-primary" id="show-info">More Information</button>
+      <button class="btn btn-primary" id="show-projects">View Projects</button>
     </div>
+    <!--hidden projects link-->
+    <div id="hidden-projects">
+      <li style="text-align: center;"> <a href="https://riyandharne-123.github.io/ToDoApp/">To Do App Project</a></li>
+     
+    </div>
+    </div>
+   
   </div>
+    
             <div class="container" style="margin-left: 20px;">
            <!--  <h1 style="color: greenyellow;">Riyan Dharne</h1>      
               <p style="font-size: 30px; font-style: italic; color: white;" >Front end web developer</p>-->
             </div>
           </div>
-         <!--skillset-->
+         
+          
+<!--skillset-->
          <!-- hidden skils span-->
+
   <div id="span-profile">
     <table class="table table-hover" style="text-align: center;" >
      
     <thead>
+      
+       <div id="table-button"> <button class="btn btn-secondary"  id="go-back-from-table">Go Back</button> </div>
+      
         <tr>
             <th><h1><span class="badge badge-secondary">Skills</span></h1></th>
           </tr>
     </thead>
     <tbody>     
+      <tr>
+        <th id="table-head-tag">Front End:-</th>
+      </tr>
     <tr>
       <th id="table-head">Html 5</th>
      </tr>
@@ -94,7 +166,9 @@
        <tr>  
       <th id="table-head">Angular JS</th>
        </tr>
-
+<tr>
+  <th  id="table-head-tag">Back End:-</th>
+</tr>
       <tr>
       <th id="table-head">PHP</th>
       </tr>
@@ -102,6 +176,12 @@
         <tr>
       <th id="table-head">MySQl</th>
       </tr>
+
+      <tr>
+        <th  id="table-head-tag">Version Control</th>
+      </tr>
+
+      <tr><th id="table-head">Git Hub </th></tr>
 
       </tbody>
     </table>
